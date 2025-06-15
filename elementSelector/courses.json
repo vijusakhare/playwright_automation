@@ -1,0 +1,8 @@
+{
+    "searchInput": "input[aria-label='Search input']",
+    "dataScienceOption": "label:has-text('data science') .chakra-checkbox__control'",
+    "IntermidiateOption": "label:has-text('intermediate') .chakra-checkbox__control'",
+    "intermediateElements": "p:has-text('Intermediate')",
+    "courseHeading": "article[role='group'] a.chakra-heading",
+    "ratingLocator": "article[role='group'] [role='img'][aria-label^='Rated']"
+}

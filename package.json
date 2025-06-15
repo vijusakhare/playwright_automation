@@ -1,0 +1,17 @@
+{
+  "name": "playwright-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "scenario1": "npx playwright test scenario1.test.ts --config=playwright.config.ts",
+    "scenario2": "npx playwright test scenario2.test.ts --config=playwright.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^24.0.1"
+  }
+}
