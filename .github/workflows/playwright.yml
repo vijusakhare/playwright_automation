@@ -13,6 +13,7 @@ jobs:
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
+        registry-url: 'https://registry.npmjs.org/'
     - name: Authenticate to npm
       run: echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
     - name: Install dependencies
