@@ -6,7 +6,7 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
   //retries: 1,
   workers: process.env.CI ? 1 : undefined,
-  // reporter: [ ['allure-playwright'] ],
+  reporter: [ ['allure-playwright'] ],
   use: {
     screenshot: 'only-on-failure',
     trace: 'retain-on-failure',
