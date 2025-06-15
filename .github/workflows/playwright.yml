@@ -20,7 +20,7 @@ jobs:
 
       - name: Setup .npmrc
         run: |
-          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
+          run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.NPM_TOKEN }}" > ~/.npmrc
 
       - name: Install Dependencies
         run: npm install
