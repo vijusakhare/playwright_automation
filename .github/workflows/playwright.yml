@@ -24,7 +24,7 @@ jobs:
 
       - name: Authenticate to npm (Windows-safe)
         run: |
-          echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > %USERPROFILE%\.npmrc
+           echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" > $env:USERPROFILE\.npmrc
 
       - name: Install dependencies
         run: npm install
