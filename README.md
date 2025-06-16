@@ -26,3 +26,13 @@ This project uses [Playwright](https://playwright.dev/) for end-to-end and API t
 2. **Run Test** 
    npm run scenario1
    npm run scenario2
+
+## Steps to integrate with jenkins
+   1 - Download jekins and install
+   2 - Run jenkins on local machine
+   3 - After installation create project in jekins
+   4 - Complete configuration
+       in config select execute windows shell option and add below command
+       $ git clone <repo-link> or local repo path
+       $ npm install
+       $ npx playwright test test_name
