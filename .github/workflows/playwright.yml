@@ -22,8 +22,9 @@ jobs:
           node-version: lts/*
           registry-url: 'https://registry.npmjs.org/'
 
-      - name: Authenticate to npm
-        run: npm config set //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}
+      - name: Authenticate to npm (Windows-safe)
+        run: |
+          echo //registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }} > %USERPROFILE%\.npmrc
 
       - name: Install dependencies
         run: npm install
